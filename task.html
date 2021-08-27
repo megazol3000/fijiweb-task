@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задачи вертикальный вид</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header -flex -justify-between">
+      <div class="logo"><a href="#"><img src="img/logo.svg" alt="" /></a></div>
+      <div class="header__login -flex -center"><span class="header__name">Динислам Фатыхов</span><a class="btn"
+          href="#">Выйти</a></div>
+    </header>
+    <div class="full-width -flex">
+      <div class="main-nav">
+        <ul>
+          <li class="nav-tasks active"><a class="-flex" href="#"> <span></span>Задачи</a></li>
+          <li class="nav-pay"><a class="-flex" href="#"> <span></span>Оплаты</a></li>
+          <li class="nav-acts"><a class="-flex" href="#"> <span></span> Акты</a></li>
+          <li class="nav-klients"><a class="-flex" href="#"> <span></span> Клиенты</a></li>
+          <li class="nav-team"><a class="-flex" href="#"> <span></span> Команда</a></li>
+          <li class="nav-money"><a class="-flex" href="#"> <span></span> Зарплаты</a></li>
+          <li class="nav-debet"><a class="-flex" href="#"> <span></span> Дебиторка</a></li>
+          <li class="nav-otch"><a class="-flex" href="#"> <span></span> Отчеты</a></li>
+          <li class="nav-settings"><a class="-flex" href="#"> <span></span> Настройки</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="task__content">
+          <div class="c__row">
+            <div class="c__col-12"><a class="to-back" href="#">Вернуться к задачам</a>
+              <h1>Дизайн для «АКН Развитие»<a class="task-edit" href="#"></a></h1>
+              <div class="task-parent">Родительская задача <a href="#">«Создание сайта»</a></div>
+              <div class="task-status task__approved">Подтвержден руководителем</div>
+              <div class="task-money -flex">
+                <div class="task-money__row"><span>Сумма для клиента</span>
+                  <div class="task-money__input">
+                    <input type="text" value="100 000" /><span>руб.</span>
+                  </div>
+                  <div class="task-money-progress"> <span class="task-money-progress-text">Оплачено 40 000
+                      руб.</span><span class="progress-col" style="width:50%"></span></div>
+                </div>
+                <div class="task-money__row"><span>Выработка</span>
+                  <div class="task-money__input">
+                    <input type="text" value="80 000" /><span>руб.</span>
+                  </div>
+                  <div class="task-money-progress"> <span class="task-money-progress-text">Подписано актов на 40 000
+                      руб.</span><span class="progress-col" style="width:70%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c__row">
+            <div class="c__col-8">
+              <div class="task-h2">Описание задачи</div>
+              <div class="subtitle description-subtitle">
+                <div class="subtitle-icon decsription-icon"></div> <span>Описание</span>
+              </div>
+              <textarea></textarea>
+              <div class="task-h3">Файлы для выполнения</div>
+              <div class="file-list">
+                <div class="file-list__item"><a class="file-item" href="">Прототип Главная.ai</a><a class="file-delete"
+                    href="#">Удалить</a></div>
+                <div class="file-list__item"><a class="file-item" href="">Прототип Главная.ai</a><a class="file-delete"
+                    href="#">Удалить</a></div>
+              </div>
+              <label class="file-attach" for="file-attach-1"><span>Прикрепить файл</span>
+                <input id="file-attach-1" type="file" />
+              </label>
+              <span class="break-line"></span>
+              <div class="task-title check-subtitle">
+                <div class="subtitle checklist-subtitle">
+                  <div class="subtitle-icon checklist-icon"></div> <span>Чек-лист</span>
+                </div>
+                <div class="task-checkbox-block">
+                  <span>Скрывать выполненные</span>
+                  <input type="checkbox" id="task-checkbox"><label for="task-checkbox"></label>
+                </div>
+              </div>
+              <div class="checklist-item">
+                <div class="checklist-item-title">
+                  <div class="checklist-item-task">
+                    <input type="checkbox" id="checklist-item__checkbox-1" class="checklist-item__checkbox"> <label
+                      for="checklist-item__checkbox-1"></label>
+                    <span class="task-name">Нужно сделать главную страницу</span>
+                    <div class="three-dots">
+                      <div class="three-dots-dialog">
+                        <span class="edit-task">Редактировать</span>
+                        <span class="delete-task">Удалить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checklist-item-title-workers">
+                    <span class="checklist-item-title-workers_red">рв</span><span
+                      class="checklist-item-title-workers_blue">дф</span>
+                  </div>
+                </div>
+                <div class="checklist-item-attachments">
+                  <div class="checklist-item-attachment">
+                    <div class="checklist-item-attachment__img"></div>
+                    <div class="checklist-item-attachment__name">
+                      <div class="checklist-item-attachment__icon"></div>PNG, 1.5 Мб
+                    </div>
+                  </div>
+                  <div class="checklist-item-attachment">
+                    <div class="checklist-item-attachment__img-txt"></div>
+                    <div class="checklist-item-attachment__name">
+                      <div class="checklist-item-attachment__icon"></div>PNG, 1.5 Мб
+                    </div>
+                  </div>
+
+                </div>
+                <span class="break-line-2"></span>
+              </div>
+
+              <div class="checklist-item">
+                <div class="checklist-item-title">
+                  <div class="checklist-item-task">
+                    <input type="checkbox" id="checklist-item__checkbox-2" class="checklist-item__checkbox"> <label
+                      for="checklist-item__checkbox-2"></label>
+                    <span class="task-name">Нужно сделать главную страницу</span>
+                    <div class="three-dots">
+                      <div class="three-dots-dialog">
+                        <span class="edit-task">Редактировать</span>
+                        <span class="delete-task">Удалить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checklist-item-title-workers">
+                    <span class="checklist-item-title-workers_red">рв</span><span
+                      class="checklist-item-title-workers_blue">дф</span>
+                  </div>
+                </div>
+                <div class="checklist-item-attachments">
+
+                </div>
+                <span class="break-line-2"></span>
+              </div>
+
+              <div class="checklist-item">
+                <div class="checklist-item-title">
+                  <div class="checklist-item-task">
+                    <input type="checkbox" id="checklist-item__checkbox-3" class="checklist-item__checkbox"> <label
+                      for="checklist-item__checkbox-3"></label>
+                    <span class="task-name">Нужно сделать главную страницу</span>
+                    <div class="three-dots">
+                      <div class="three-dots-dialog">
+                        <span class="edit-task">Редактировать</span>
+                        <span class="delete-task">Удалить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checklist-item-title-workers">
+                    <span class="checklist-item-title-workers_red">рв</span><span
+                      class="checklist-item-title-workers_blue">дф</span>
+                  </div>
+                </div>
+                <div class="checklist-item-attachments">
+                  <div class="checklist-item-attachment">
+                    <div class="checklist-item-attachment__img"></div>
+                    <div class="checklist-item-attachment__name">
+                      <div class="checklist-item-attachment__icon"></div>PNG, 1.5 Мб
+                    </div>
+                  </div>
+                  <div class="checklist-item-attachment">
+                    <div class="checklist-item-attachment__img"></div>
+                    <div class="checklist-item-attachment__name">
+                      <div class="checklist-item-attachment__icon"></div>PNG, 1.5 Мб
+                    </div>
+                  </div>
+
+                </div>
+                <span class="break-line-2"></span>
+              </div>
+              <div class="checklist-item">
+                <div class="checklist-item-title">
+                  <div class="checklist-item-task">
+                    <input type="checkbox" id="checklist-item__checkbox-4" class="checklist-item__checkbox"> <label
+                      for="checklist-item__checkbox-4"></label>
+                    <span class="task-name">Нужно сделать главную страницу</span>
+                    <div class="three-dots">
+                      <div class="three-dots-dialog">
+                        <span class="edit-task">Редактировать</span>
+                        <span class="delete-task">Удалить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checklist-item-title-workers">
+                    <span class="checklist-item-title-workers_red">рв</span><span
+                      class="checklist-item-title-workers_blue">дф</span>
+                  </div>
+                </div>
+                <div class="checklist-item-attachments">
+                </div>
+                <span class="break-line-2"></span>
+              </div>
+
+              <div class="edit-task-window">
+                <div class="edit-task-window-title">
+                  <span class="edit-task-window__title">Редактирование задачи</span>
+                  <div class="close-window"></div>
+                </div>
+                <span>Задача</span>
+                <input type="text" class="edit-task__input">
+                <div class="attachment-block">
+                  <div class="checklist-item-attachment">
+                    <div class="checklist-item-attachment__img"></div>
+                    <div class="checklist-item-attachment__name">
+                      <div class="checklist-item-attachment__icon"></div>PNG, 1.5 Мб
+                    </div>
+                  </div>
+                  <button class="btn file-btn">
+                    <div class="checklist-item-white-attachment__icon"></div>Прикрепить файл
+                  </button>
+                </div>
+                <div class="edit-task-window-buttons">
+                  <button class="escape-edit">Отмена</button>
+                  <button class="btn save-task">Сохранить</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="c__col-4">
+              <div class="task-chat">
+                <div class="task-chat__head">
+                  <div class="task-h2">Чат</div>
+                </div>
+
+                <div class="chat">
+                  <span class="chat-date">16 августа</span>
+                  <div class="chat-item">
+                    <div class="message-autor">РВ</div>
+                    <div class="message">
+                      <div class="message-title">
+                        <div class="message-title__autor">Руслан</div>
+                        <div class="message-title-time">12:11</div>
+                      </div>
+                      <div class="message-text">Нужно сделать главную страницу</div>
+                      <div class="message-footer">
+                        <span class="message-footer__title">Пометить как задачу</span>
+                        <span class="message-footer__answer">Ответить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-item">
+                    <div class="message-autor">РВ</div>
+                    <div class="message">
+                      <div class="message-title">
+                        <div class="message-title__autor">Руслан</div>
+                        <div class="message-title-time">12:11</div>
+                      </div>
+                      <div class="message-text">Нужно сделать главную страницу</div>
+                      <div class="message-footer">
+                        <span class="message-footer__title">Пометить как задачу</span>
+                        <span class="message-footer__answer">Ответить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-item">
+
+                    <div class="my-message">
+                      <div class="message-title">
+                        <div class="message-title__autor">Динислам</div>
+                        <div class="message-title-time">12:11</div>
+                      </div>
+                      <div class="message-text">Нужно сделать главную страницу</div>
+                      <div class="message-footer">
+                        <span class="message-footer__title">Пометить как задачу</span>
+                        <span class="message-footer__answer">Ответить</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <span class="chat-date">17 августа</span>
+                  <div class="chat-item">
+                    <div class="message-autor">РВ</div>
+                    <div class="message">
+                      <div class="message-title">
+                        <div class="message-title__autor">Руслан</div>
+                        <div class="message-title-time">12:11</div>
+                      </div>
+                      <div class="message-text">Нужно сделать главную страницу</div>
+                      <div class="message-footer">
+                        <span class="message-footer__title">Пометить как задачу</span>
+                        <span class="message-footer__answer">Ответить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-block">
+                  <div class="checklist-item-attachment__icon"></div>
+                  <input id="input-block__area" class="input-block__area" type="text">
+                  <label class="input-block__area-label" for="input-block__area"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c__row">
+            <div class="c__col-6">
+              <div class="task-h2">Ответственные лица</div>
+              <div class="task__executor">
+                <div class="task-h3">Исполнители</div>
+                <div class="task__executor__row -flex -justify-between"><span class="task__executor__user">Айнур
+                    Кильдибеков</span><span>
+                    <div class="task__executor__money">8 000 руб.</div><a class="delete-excutor" href="#"></a>
+                  </span></div>
+                <div class="task__executor__row task__executor__add -flex -justify-between">
+                  <select>
+                    <option value="1">Айнур Кильдибеков</option>
+                    <option value="1">Айнур Кильдибеков</option>
+                  </select>
+                  <input type="text" />
+                  <div class="task__executor_add__control -flex"><a class="task__executor__assept" href="#"></a><a
+                      class="task__executor__cancel" href="#"></a></div>
+                </div><a href="#">Добавить</a>
+              </div>
+              <div class="task__executor">
+                <div class="task-h3">Менеджер задачи</div>
+                <div class="task__executor__row -flex -justify-between"><span class="task__executor__user">Айнур
+                    Кильдибеков</span><span>
+                    <div class="task__executor__money">8 000 руб.</div><a class="delete-excutor" href="#"></a>
+                  </span></div>
+                <div class="task__executor__row -flex -justify-between"><span class="task__executor__user">Динислам
+                    Фатыхов</span><span>
+                    <div class="task__executor__money">8 000 руб.</div><a class="delete-excutor" href="#"></a>
+                  </span></div><a href="#">Добавить</a>
+              </div>
+              <div class="task__executor">
+                <div class="task-h3">Кто привел</div>
+                <div class="task__executor__row -flex -justify-between"><span class="task__executor__user">Айнур
+                    Кильдибеков</span><span>
+                    <div class="task__executor__money">8 000 руб.</div><a class="delete-excutor" href="#"></a>
+                  </span></div>
+                <div class="task__executor__row -flex -justify-between"><span class="task__executor__user">Динислам
+                    Фатыхов</span><span>
+                    <div class="task__executor__money">8 000 руб.</div><a class="delete-excutor" href="#"></a>
+                  </span></div><a href="#">Добавить</a>
+              </div>
+              <div class="task__executor">
+                <div class="task-h3">Кто продал</div>
+                <div class="task__executor__row -flex -justify-between"><span class="task__executor__user">Айнур
+                    Кильдибеков</span><span>
+                    <div class="task__executor__money">8 000 руб.</div><a class="delete-excutor" href="#"></a>
+                  </span></div>
+                <div class="task__executor__row -flex -justify-between"><span class="task__executor__user">Динислам
+                    Фатыхов</span><span>
+                    <div class="task__executor__money">8 000 руб.</div><a class="delete-excutor" href="#"></a>
+                  </span></div><a href="#">Добавить</a>
+              </div>
+            </div>
+            <div class="c__col-6">
+              <div class="task-h2">Результат задачи</div>
+              <textarea></textarea>
+              <div class="task-h3">Файлы для выполнения</div>
+              <div class="file-list">
+                <div class="file-list__item"><a class="file-item" href="#">Прототип Главная.ai</a><a class="file-delete"
+                    href="#">Удалить</a></div>
+                <div class="file-list__item"><a class="file-item" href="#">Прототип Главная.ai</a><a class="file-delete"
+                    href="#">Удалить</a></div>
+              </div>
+              <div class="task__send">
+                <form action="#">
+                  <input type="email" placeholder="Введите e-mail" />
+                  <button class="btn btn-fillblue">Отправить результат на почту</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="c__row">
+            <div class="c__col-6">
+              <div class="task-h2">Документы на подписание</div>
+              <div class="task-docs">
+                <div class="task-h3">Договор</div>
+                <div class="task-docs__list">
+                  <div class="file-list__item"><a class="file-item" href="#">Договор №31 от 02.02.2020.docx</a><a
+                      class="file-delete" href="#">Удалить</a></div>
+                </div>
+                <div class="task-docs__control -flex"><a class="btn btn-pink" href="#">Прикрепить вручную</a><a
+                    class="btn btn-fillblue" href="#">Прикрепить вручную</a></div>
+              </div>
+              <div class="task-docs">
+                <div class="task-h3">Счет к оплате</div>
+                <div class="task-docs__list">
+                  <div class="file-list__item"><a class="file-item" href="#">Договор №31 от 02.02.2020.docx</a><a
+                      class="file-delete" href="#">Удалить</a></div>
+                </div>
+                <div class="task-docs__control -flex"><a class="btn btn-pink" href="#">Прикрепить вручную</a><a
+                    class="btn btn-fillblue" href="#">Прикрепить вручную</a></div>
+              </div>
+            </div>
+            <div class="c__col-6">
+              <div class="task-h2">Сканы документов</div>
+              <div class="task-docs">
+                <div class="task-h3">Договор</div>
+                <div class="task-docs__list">
+                  <div class="file-list__item"><a class="file-item" href="#">Договор №31 от 02.02.2020.docx</a><a
+                      class="file-delete" href="#">Удалить</a></div>
+                </div>
+                <div class="task-docs__control -flex"><a class="btn btn-fillblue" href="#">Прикрепить</a></div>
+              </div>
+              <div class="task-docs">
+                <div class="task-h3">Счет к оплате</div>
+                <div class="task-docs__list">
+                  <div class="file-list__item"><a class="file-item" href="#">Договор №31 от 02.02.2020.docx</a><a
+                      class="file-delete" href="#">Удалить</a></div>
+                </div>
+                <div class="task-docs__control -flex"><a class="btn btn-fillblue" href="#">Прикрепить</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="c__row">
+            <div class="c__col-4">
+              <div class="task-h2">Оплаты от клиента <span>(40 000 / 100 000 руб.)</span></div>
+              <div class="clients-pays">
+                <div class="clients-pays__row -flex -justify-between"><span>Наличными </span><span>10 000 руб.</span>
+                </div>
+                <div class="clients-pays__row -flex -justify-between"><span>Расчетный счет</span><span>10 000
+                    руб.</span></div>
+                <div class="clients-pays__row -flex -justify-between"><span>Картой на сайте</span><span>10 000
+                    руб.</span></div>
+                <input type="text" placeholder="Введите сумму" />
+                <div class="clients-pays__alert">Осталось привязать 30 000 руб <br>Доступно для привязки 40 000 руб
+                </div><a class="btn btn-fillblue" href="#">Привязать</a>
+              </div>
+            </div>
+            <div class="c__col-8">
+              <div class="task-h2">Подписанные акты <span>(60 000 / 100 000 руб.)</span></div>
+              <table class="task-act">
+                <tr>
+                  <th>№ Акта</th>
+                  <th>Сумма</th>
+                  <th>Дата создания</th>
+                  <th>Дата подписания</th>
+                </tr>
+                <tr>
+                  <td>123</td>
+                  <td>30 000 руб.</td>
+                  <td>12 фев 2021 г.</td>
+                  <td>20 фев 2021 г.</td>
+                </tr>
+                <tr>
+                  <td>178</td>
+                  <td>30 000 руб.</td>
+                  <td>12 фев 2021 г.</td>
+                  <td>20 фев 2021 г.</td>
+                </tr>
+              </table>
+              <div class="task-h2">Сформированные акты</div>
+              <table class="task-act">
+                <tr>
+                  <th>№ Акта</th>
+                  <th>Сумма</th>
+                  <th>Дата создания</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>123</td>
+                  <td>30 000 руб.</td>
+                  <td>12 фев 2021 г.</td>
+                  <td>
+                    <div class="skan-file"><a class="skan-file__item" href="#">Скан</a><a class="delete"
+                        href="#">Удалить</a></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123</td>
+                  <td>30 000 руб.</td>
+                  <td>12 фев 2021 г.</td>
+                  <td>
+                    <div class="skan-file"><a class="skan-file__item" href="#">Скан</a><a class="delete"
+                        href="#">Удалить</a></div>
+                  </td>
+                </tr>
+              </table>
+              <div class="task__send">
+                <form action="#">
+                  <input type="text" placeholder="Введите сумму" />
+                  <button class="btn btn-pink">Сформировать</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="c__row">
+            <div class="c__col-12"><a class="btn btn-red" href="#">Удалить задачу</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="/js/scripts.js"></script>
+
+</html>

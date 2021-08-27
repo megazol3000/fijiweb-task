@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Карточка сотрудника</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header -flex -justify-between">
+        <div class="logo"><a href="#"><img src="img/logo.svg" alt=""/></a></div>
+        <div class="header__login -flex -center"><span class="header__name">Динислам Фатыхов</span><a class="btn" href="#">Выйти</a></div>
+      </header>
+      <div class="full-width -flex">
+        <div class="main-nav">
+          <ul>
+            <li class="nav-tasks active"><a class="-flex" href="#"> <span></span>Задачи</a></li>
+            <li class="nav-pay"><a class="-flex" href="#"> <span></span>Оплаты</a></li>
+            <li class="nav-acts"><a class="-flex" href="#"> <span></span> Акты</a></li>
+            <li class="nav-klients"><a class="-flex" href="#"> <span></span> Клиенты</a></li>
+            <li class="nav-team"><a class="-flex" href="#"> <span></span> Команда</a></li>
+            <li class="nav-money"><a class="-flex" href="#"> <span></span> Зарплаты</a></li>
+            <li class="nav-debet"><a class="-flex" href="#"> <span></span> Дебиторка</a></li>
+            <li class="nav-otch"><a class="-flex" href="#"> <span></span> Отчеты</a></li>
+            <li class="nav-settings"><a class="-flex" href="#"> <span></span> Настройки</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="ts__header -flex -center -wrap"><a class="to-back" href="#">Вернуться к сотрудникам</a>
+            <div class="title">Айнур Кильдибеков</div>
+          </div>
+          <div class="tabs"><a class="active" href="#">О сотруднике</a><a href="#">Задачи</a><a href="#">Зарплата</a></div>
+          <div class="c__row content-white client-info">
+            <div class="c__col-12">
+              <div class="client-info__row"><span>Официальное наименование</span>
+                <div>ainur@fijiweb.ru</div>
+              </div>
+              <div class="client-info__row"><span>Пароль</span>
+                <input type="password" value="123124"/>
+              </div>
+              <div class="client-info__row"><span>Роли</span>
+                <select>
+                  <option value="1">Исполнитель</option>
+                </select>
+              </div>
+              <div class="client-info__row">
+                <div class="-flex -center">
+                  <div>Исполнитель</div><a class="delete" href="#">Удалить</a>
+                </div>
+              </div>
+              <div class="client-info__row"><a href="#">Добавить</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</html>

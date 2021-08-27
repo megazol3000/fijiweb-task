@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Карточка клиента</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header -flex -justify-between">
+        <div class="logo"><a href="#"><img src="img/logo.svg" alt=""/></a></div>
+        <div class="header__login -flex -center"><span class="header__name">Динислам Фатыхов</span><a class="btn" href="#">Выйти</a></div>
+      </header>
+      <div class="full-width -flex">
+        <div class="main-nav">
+          <ul>
+            <li class="nav-tasks active"><a class="-flex" href="#"> <span></span>Задачи</a></li>
+            <li class="nav-pay"><a class="-flex" href="#"> <span></span>Оплаты</a></li>
+            <li class="nav-acts"><a class="-flex" href="#"> <span></span> Акты</a></li>
+            <li class="nav-klients"><a class="-flex" href="#"> <span></span> Клиенты</a></li>
+            <li class="nav-team"><a class="-flex" href="#"> <span></span> Команда</a></li>
+            <li class="nav-money"><a class="-flex" href="#"> <span></span> Зарплаты</a></li>
+            <li class="nav-debet"><a class="-flex" href="#"> <span></span> Дебиторка</a></li>
+            <li class="nav-otch"><a class="-flex" href="#"> <span></span> Отчеты</a></li>
+            <li class="nav-settings"><a class="-flex" href="#"> <span></span> Настройки</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="ts__header -flex -center -wrap"><a class="to-back" href="#">Вернуться к задачам</a>
+            <div class="title">АКН Развитие</div>
+          </div>
+          <div class="tabs"><a class="active" href="#">О клиенте</a><a href="#">Задачи</a><a href="#">Оплаты</a><a href="#">Акты</a><a href="#">Документы</a></div>
+          <div class="c__row content-white client-info">
+            <div class="c__col-12">
+              <div class="client-info__row"><span>Официальное наименование</span>
+                <div>ИП Логинов Павел</div>
+              </div>
+              <div class="client-info__row"><span>ИНН</span>
+                <div>024203222908</div>
+              </div>
+              <div class="client-info__row"><span>Адрес</span>
+                <div>Уфа, ул. Менделеева, д. 23/2</div>
+              </div>
+            </div>
+          </div>
+          <div class="c__row content-white">
+            <div class="c__col-12">
+              <div class="-flex -center mb-10">
+                <div class="task-h2 mb-0">Контактные лица</div><a class="add-plus" href="#" data-remodal-target="add-contact-client"></a>
+              </div>
+              <div class="contact-person__list -flex -wrap">
+                <div class="contact-person__item">
+                  <div class="contact-person__name -flex -center -justify-between">Иванов Пётр Семёнович <a class="contact-person" href="#" data-remodal-target="add-contact-client"> </a></div>
+                  <div class="contact-person__dolzh">менеджер по продажам</div>
+                  <div class="contact-person__row contact-person__phones">
+                    <div class="-flex -center">8 (999) 999-99-99  <span>доб. 11</span></div>
+                    <div class="-flex -center">8 (999) 999-99-99  <span>доб. 11</span></div>
+                  </div>
+                  <div class="contact-person__row contact-person__mails">
+                    <div class="-flex -center">ivanov@mail.ru</div>
+                    <div class="-flex -center">ivanov@mail.ru</div>
+                  </div>
+                </div>
+                <div class="contact-person__item">
+                  <div class="contact-person__name -flex -center -justify-between">Иванов Пётр Семёнович <a class="contact-person" href="#" data-remodal-target="add-contact-client"> </a></div>
+                  <div class="contact-person__dolzh">менеджер по продажам</div>
+                  <div class="contact-person__row contact-person__phones">
+                    <div class="-flex -center">8 (999) 999-99-99  <span>доб. 11</span></div>
+                    <div class="-flex -center">8 (999) 999-99-99  <span>доб. 11</span></div>
+                  </div>
+                  <div class="contact-person__row contact-person__mails">
+                    <div class="-flex -center">ivanov@mail.ru</div>
+                    <div class="-flex -center">ivanov@mail.ru</div>
+                  </div>
+                </div>
+                <div class="contact-person__item">
+                  <div class="contact-person__name -flex -center -justify-between">Иванов Пётр Семёнович <a class="contact-person" href="#" data-remodal-target="add-contact-client"> </a></div>
+                  <div class="contact-person__dolzh">менеджер по продажам</div>
+                  <div class="contact-person__row contact-person__phones">
+                    <div class="-flex -center">8 (999) 999-99-99  <span>доб. 11</span></div>
+                    <div class="-flex -center">8 (999) 999-99-99  <span>доб. 11</span></div>
+                  </div>
+                  <div class="contact-person__row contact-person__mails">
+                    <div class="-flex -center">ivanov@mail.ru</div>
+                    <div class="-flex -center">ivanov@mail.ru</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="remodal" data-remodal-id="add-client" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <div class="title">Новый клиент</div>
+    <form action="#">
+      <div class="field-row">
+        <label>Наименование (псевдоним)</label>
+        <input type="text"/>
+      </div>
+      <div class="field-row">
+        <label>Официальное наименование</label>
+        <input type="text"/>
+      </div>
+      <div class="field-row">
+        <label>ИНН</label>
+        <input type="text"/>
+      </div>
+      <div class="field-row">
+        <label>Адрес</label>
+        <input type="text"/>
+      </div>
+      <button class="btn btn-fillblue">Добавить клиента</button>
+    </form>
+  </div>
+  <div class="remodal" data-remodal-id="add-person" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <div class="title">Новый cотрудник</div>
+    <form action="#">
+      <div class="field-row">
+        <label>Псевдоним</label>
+        <input type="text"/>
+      </div>
+      <div class="field-row">
+        <label>Email</label>
+        <input type="text"/>
+      </div>
+      <div class="field-row">
+        <label>Пароль</label>
+        <input type="text"/>
+      </div>
+      <div class="field-row">
+        <label>Роли</label>
+        <select>
+          <option value="1">Руководитель</option>
+          <option value="2">Дизайнер</option>
+        </select>
+      </div>
+      <button class="btn btn-fillblue">Добавить сотрудника</button>
+    </form>
+  </div>
+  <div class="remodal" data-remodal-id="add-contact-client" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <form action="#">
+      <div class="field-row">
+        <label>ФИО</label>
+        <input type="text" value="Иванов Петр Семенович"/>
+      </div>
+      <div class="field-row">
+        <label>Должность</label>
+        <input type="text" value="Менеджер по продажам"/>
+      </div>
+      <div class="field-row">
+        <label>Телефоны</label>
+        <div class="-flex -center">
+          <input type="text" value="8 (917) 342 65 78"/><a class="delete-form-row" href="#"> </a>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="-flex -center">
+          <input type="text" value="8 (917) 342 65 78"/>
+          <input class="dop-input" type="text" value="1234"/><a class="delete-form-row" href="#"> </a>
+        </div>
+      </div>
+      <div class="field-row"><a class="form-row-add" href="#">+ добавить</a></div>
+      <div class="field-row">
+        <label>E-mail
+          <div class="-flex">
+            <input type="text" value="Ivanov@mail.ru"/><a class="form-row-delete" href="#"> </a>
+          </div>
+        </label>
+      </div>
+      <div class="field-row"><a class="form-row-add" href="#">+ добавить</a></div>
+      <div class="field-row__btns -flex -center">
+        <button class="btn btn-fillblue">Сохранить</button><a class="form-row__cancel" href="#">Удалить </a>
+      </div>
+    </form>
+  </div>
+  <div class="remodal center-text remodal-alert" data-remodal-id="error" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <div class="title red-text">Ошибка!</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="btns-control -flex -center"><a class="btn btn-fillblue" href="#" data-remodal-action="close">Закрыть</a></div>
+  </div>
+  <div class="remodal center-text remodal-alert" data-remodal-id="delete" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <div class="title">Удалить</div>
+    <p>Вы уверены, что хотите удалить<br> Lorem ipsum dolor sit amet?</p>
+    <div class="btns-control -flex -center"><a class="btn btn-fillblue" href="#" data-remodal-action="close">Закрыть</a><a class="btn btn-pink" href="#">Подтвердить</a></div>
+  </div>
+  <div class="remodal center-text remodal-alert" data-remodal-id="success" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <div class="title">Операция выполнена успешно</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.</p>
+    <div class="btns-control -flex -center"><a class="btn btn-fillblue" href="#" data-remodal-action="close">Закрыть</a></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</html>

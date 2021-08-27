@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Отчёты</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header -flex -justify-between">
+        <div class="logo"><a href="#"><img src="img/logo.svg" alt=""/></a></div>
+        <div class="header__login -flex -center"><span class="header__name">Динислам Фатыхов</span><a class="btn" href="#">Выйти</a></div>
+      </header>
+      <div class="full-width -flex">
+        <div class="main-nav">
+          <ul>
+            <li class="nav-tasks active"><a class="-flex" href="#"> <span></span>Задачи</a></li>
+            <li class="nav-pay"><a class="-flex" href="#"> <span></span>Оплаты</a></li>
+            <li class="nav-acts"><a class="-flex" href="#"> <span></span> Акты</a></li>
+            <li class="nav-klients"><a class="-flex" href="#"> <span></span> Клиенты</a></li>
+            <li class="nav-team"><a class="-flex" href="#"> <span></span> Команда</a></li>
+            <li class="nav-money"><a class="-flex" href="#"> <span></span> Зарплаты</a></li>
+            <li class="nav-debet"><a class="-flex" href="#"> <span></span> Дебиторка</a></li>
+            <li class="nav-otch"><a class="-flex" href="#"> <span></span> Отчеты</a></li>
+            <li class="nav-settings"><a class="-flex" href="#"> <span></span> Настройки</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="ts__header -flex -center">
+            <div class="title">Отчеты</div>
+            <select>
+              <option value="По исполнителям">По исполнителям</option>
+              <option value="По исполнителям">По исполнителям</option>
+            </select>
+          </div>
+          <div class="c__row content-white">
+            <div class="c__col-12">
+              <div class="task-h2">Прогресс по плану выработки</div>
+              <div class="ts__filter -flex -center -end pt-0 mt-12">
+                <div class="ts__filter__title">Фильтр</div>
+                <div class="ts__filter__col"><span>Период</span>
+                  <select>
+                    <option value="Июль 2021">Июль 2021</option>
+                    <option value="Июль 2020">Июль 2020</option>
+                  </select>
+                </div>
+                <div class="ts__filter__col"><span>Сотрудники</span>
+                  <select>
+                    <option value="Все статусы">Все исполнители</option>
+                    <option value="Все исполнители">Все исполнители</option>
+                  </select>
+                </div>
+              </div>
+              <div class="ts__plan-list">
+                <div class="ts__plan-item">
+                  <div class="ts__plan-name">Арсений Неджера</div>
+                  <div class="ts__plan-graph-content" style="width: calc(85% - 200px);">
+                    <div class="ts__plan-graph have-plan">
+                      <div class="ts__plan-min" style="width:40%"> </div>
+                      <div class="ts__plan-middle" style="width:30%">100 000 руб.</div>
+                      <div class="ts__plan-good" style="width:30%">150 000 руб.</div>
+                      <div class="ts__real-summ" style="width:27%;background: #FFDFE7;">95 800 руб.</div>
+                    </div>
+                  </div>
+                  <div class="ts__plan-summ"> 200 000 руб.</div>
+                </div>
+                <div class="ts__plan-item">
+                  <div class="ts__plan-name">Айнур Кильдибеков</div>
+                  <div class="ts__plan-graph-content" style="width: calc(100% - 200px);">
+                    <div class="ts__plan-graph have-plan">
+                      <div class="ts__plan-min" style="width:40%"> </div>
+                      <div class="ts__plan-middle" style="width:30%"> </div>
+                      <div class="ts__plan-good" style="width:30%">250 000 руб.</div>
+                      <div class="ts__real-summ" style="width:57%; background:#FFF0BE;">155 800 руб.</div>
+                    </div>
+                  </div>
+                  <div class="ts__plan-summ"> 300 000 руб.</div>
+                </div>
+                <div class="ts__plan-item">
+                  <div class="ts__plan-name">Александра Сиразетдинова</div>
+                  <div class="ts__plan-graph-content" style="width: calc(100% - 200px);">
+                    <div class="ts__plan-graph">
+                      <div class="ts__plan-fact" style="width:45%"> 125 800 руб.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c__row content-white">
+            <div class="c__col-12">
+              <div class="task-h2">Статистика по выработке</div>
+              <div class="ts__filter -flex -center -end pt-0 mt-12">
+                <div class="ts__filter__title">Фильтр</div>
+                <div class="ts__filter__col"><span>Период</span>
+                  <select>
+                    <option value="янв 2021 - июль 2021">янв 2021 - июль 2021</option>
+                    <option value="янв 2021 - июль 2021">янв 2021 - июль 2022</option>
+                  </select>
+                </div>
+                <div class="ts__filter__col"><span>Сотрудники</span>
+                  <select>
+                    <option value="Все статусы">Все исполнители</option>
+                    <option value="Все исполнители">Все исполнители</option>
+                  </select>
+                </div>
+                <div class="ts__filter__col"><span>Тип значений</span>
+                  <select>
+                    <option value="Текущий">Текущий</option>
+                    <option value="Текущий">Текущий</option>
+                  </select>
+                </div>
+              </div>
+              <div class="ts__report-list-users">
+                <div class="ts__report-user-item"><span style="background: #FF9900;"></span>Арсений Неджера</div>
+                <div class="ts__report-user-item"><span style="background: #6ACAEB;"></span>Айнур Кильдибеков</div>
+                <div class="ts__report-user-item"><span style="background: #E92E5A;"></span>Александра Сиразетдинова</div>
+              </div>
+              <div class="ts__graph-view"><a class="graph-view-1 active" href="#"></a><a class="graph-view-2" href="#"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</html>

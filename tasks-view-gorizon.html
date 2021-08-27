@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Задачи горизонтальный вид</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header -flex -justify-between">
+        <div class="logo"><a href="#"><img src="img/logo.svg" alt=""/></a></div>
+        <div class="header__login -flex -center"><span class="header__name">Динислам Фатыхов</span><a class="btn" href="#">Выйти</a></div>
+      </header>
+      <div class="full-width -flex">
+        <div class="main-nav">
+          <ul>
+            <li class="nav-tasks active"><a class="-flex" href="#"> <span></span>Задачи</a></li>
+            <li class="nav-pay"><a class="-flex" href="#"> <span></span>Оплаты</a></li>
+            <li class="nav-acts"><a class="-flex" href="#"> <span></span> Акты</a></li>
+            <li class="nav-klients"><a class="-flex" href="#"> <span></span> Клиенты</a></li>
+            <li class="nav-team"><a class="-flex" href="#"> <span></span> Команда</a></li>
+            <li class="nav-money"><a class="-flex" href="#"> <span></span> Зарплаты</a></li>
+            <li class="nav-debet"><a class="-flex" href="#"> <span></span> Дебиторка</a></li>
+            <li class="nav-otch"><a class="-flex" href="#"> <span></span> Отчеты</a></li>
+            <li class="nav-settings"><a class="-flex" href="#"> <span></span> Настройки</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="ts__header -flex -center">
+            <div class="title">Задачи</div>
+            <div class="ts__view -flex"><a class="ts__vertical-view" href="tasks-view-vertical.html"> <span></span></a><a class="ts__horizontal-view active" href="#"> <span></span></a></div>
+          </div>
+          <div class="ts__filter -flex -center -end">
+            <div class="ts__filter__title">Фильтр</div>
+            <div class="ts__filter__col"><span>По контрагенту</span>
+              <select>
+                <option value="Все контрагенты">Все контрагенты</option>
+                <option value="Все контрагенты">Все контрагенты 1</option>
+              </select>
+            </div>
+            <div class="ts__filter__col"><span>По статусу</span>
+              <select>
+                <option value="Все статусы">Все статусы</option>
+                <option value="В работе">В работе</option>
+              </select>
+            </div>
+            <div class="ts__filter__col"><span>Завершенные в период</span>
+              <select>
+                <option value="За всё время">За всё время</option>
+                <option value="За последнюю неделю">За последнюю неделю</option>
+              </select>
+            </div>
+          </div>
+          <div class="ts__list">
+            <div class="task-h2">АКН Развитие</div>
+            <div class="ts__table">
+              <div class="ts__table__item">
+                <div class="ts__table-row">
+                  <div class="ts__table-col">Задача</div>
+                  <div class="ts__table-col">Ответственные</div>
+                  <div class="ts__table-col">Сумма</div>
+                  <div class="ts__table-col">Статус</div>
+                </div>
+              </div>
+              <div class="ts__table__item"><a class="ts__table-row" href="#">
+                  <div class="ts__table-col">Интеграция с Яндекс недвижимость и Юлой</div>
+                  <div class="ts__table-col">Айнур Кильдибеков <br/>Динислам Фатыхов</div>
+                  <div class="ts__table-col">30 000 руб.</div>
+                  <div class="ts__table-col"> <span class="status status__inwork"> <span>В работе</span></span></div></a></div>
+            </div>
+          </div>
+          <div class="ts__list">
+            <div class="task-h2">ООО Система</div>
+            <div class="ts__table">
+              <div class="ts__table__item">
+                <div class="ts__table-row">
+                  <div class="ts__table-col">Задача</div>
+                  <div class="ts__table-col">Ответственные</div>
+                  <div class="ts__table-col">Сумма</div>
+                  <div class="ts__table-col">Статус</div>
+                </div>
+              </div>
+              <div class="ts__table__item"><a class="ts__table-row" href="#">
+                  <div class="ts__table-col">Создание сайта</div>
+                  <div class="ts__table-col">Айнур Кильдибеков <br>Динислам Фатыхов <br>Александра Сиразетдинова</div>
+                  <div class="ts__table-col">80 000 руб.</div>
+                  <div class="ts__table-col"> <span class="status status__inwork"> <span>В работе</span></span></div></a><a class="ts__table-row" href="#">
+                  <div class="ts__table-col">Прототип</div>
+                  <div class="ts__table-col">Динислам Фатыхов</div>
+                  <div class="ts__table-col">30 000 руб.</div>
+                  <div class="ts__table-col"> <span class="status status__assept"> <span>Подтвержден руководителем</span></span></div></a><a class="ts__table-row" href="#">
+                  <div class="ts__table-col">Вёрстка</div>
+                  <div class="ts__table-col">Бортник Дмитрий</div>
+                  <div class="ts__table-col">30 000 руб.</div>
+                  <div class="ts__table-col"> <span class="status status__assept"> <span>Подтвержден руководителем</span></span></div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/scripts.js"></script>
+</html>
